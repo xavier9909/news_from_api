@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   #videos{
+       display: grid;
+       grid-template-columns: 25% 25% 25%  ;
+       justify-content: center;
+   } 
+   img{
+       height: 300px;
+       width: 300px;
+   }
+   input{
+       display: grid;
+
+    height: 40px;
+margin-left: 500px;
+margin-bottom: 50px;
+font-size: large;
+    }
+    #movies{
+        flex-direction: column;
+        overflow: scroll;
+        display: flex;
+        gap: 10px;
+        overflow: hidden;
+        
+      
+       
+    }
+    .btn{
+        background-color: rgb(184, 164, 164);
+        
+        width:500px;
+        height: 20px;
+        overflow: hidden;
+
+    }
+</style>
+<body>
+    <input  style="width: 400px;" oninput="debounce(main,1000)" type="text" id="movie" placeholder="search news" >
+<div id="movies"></div>
+    <div id="videos"></div>
+</body>
+</html>
+<script src="./home.js">
+
+</script>
+<script src="./search.js"></script>
